@@ -51,7 +51,7 @@ describe('criação de usuário', () => {
 
     cy.viewport(1000, 660);
     cy.get('#email').type(email);
-    cy.get('#name').type(username.repeat(20));
+    cy.get('#name').type(username.repeat(18));
     //cy.wait('@postUsuario100').then((data)=> cy.log(data));
     cy.get('.sc-dAlyuH.jdAtLn').click();
     cy.contains('Usuário salvo com sucesso!');
